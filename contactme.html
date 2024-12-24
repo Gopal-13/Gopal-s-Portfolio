@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <style>
+        :root {
+            --primary-color: rgb(47, 161, 206);
+            --secondary-color: rgb(53, 52, 52);
+            --background-color: white;
+            --text-color: rgb(102, 100, 100);
+        }
+
         body {
-            background-color: white;
-            color: white;
+            background-color: var(--background-color);
+            color: var(--text-color);
             font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
@@ -56,13 +63,12 @@
             padding: 20px;
             box-shadow: 0 0 20px rgb(73, 73, 73);
             border-radius: 10px;
-            color: rgb(102, 100, 100);
+            color: var(--text-color);
         }
 
         h1 {
             text-align: center;
-            color: rgb(102, 100, 100);
-            
+            color: var(--text-color);
         }
 
         form {
@@ -96,12 +102,10 @@
             background-color: rgb(122, 98, 229);
         }
 
-
-
         .top {
             text-align: center;
             font-size: 1.3rem;
-            color: rgb(82, 79, 79);
+            color: var(--secondary-color);
             margin: 20px;
             font-weight: bold;
         }
@@ -110,13 +114,13 @@
             text-align: center;
             font-size: 1.4rem;
             margin: 20px;
-            color: rgb(39, 38, 38);
-            font-weight: Bold;
+            color: var(--secondary-color);
+            font-weight: bold;
         }
 
         .Information {
             text-align: center;
-            color: rgb(40, 39, 39);
+            color: var(--secondary-color);
             font-size: 1.2rem;
             margin: 10px;
         }
@@ -125,20 +129,20 @@
             text-align: center;
             font-size: 1.3rem;
             margin: 20px;
-            color: rgb(53, 52, 52);
-            font-weight: Bold;
+            color: var(--secondary-color);
+            font-weight: bold;
         }
 
         .Connect {
             text-align: center;
             font-size: 1.2rem;
-            color: rgb(53, 52, 52);
+            color: var(--secondary-color);
             margin: 20px;
         }
 
         .Media {
             text-align: center;
-            color: rgb(53, 52, 52);
+            color: var(--secondary-color);
             font-size: 1.2rem;
             margin: 10px;
         }
@@ -146,9 +150,9 @@
         .Lower {
             text-align: center;
             font-size: 1.2rem;
-            color: rgb(53, 52, 52);
+            color: var(--secondary-color);
             margin: 20px;
-            font-weight: Bold;
+            font-weight: bold;
         }
 
         .footer {
@@ -216,16 +220,16 @@
 
     <div class="Information">
         <p>Email - <a
-                href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQMHjxzpQzhblzRcpHKBBnWsshMlrZBbFbsFFwbVktDSZDpmNVRqHLPsVkCDhhhmbTrDWV"
-                target="_blank" style="color:rgb(47, 161, 206);">gk0642981@gmail.com</a></p>
+                href="mailto:gk0642981@gmail.com"
+                target="_blank" style="color:var(--primary-color);">gk0642981@gmail.com</a></p>
 
         <p>LinkedIn - <a href="https://www.linkedin.com/in/gopal-kumar-973903273/" target="_blank"
-                style="color:rgb(47, 161, 206);">Link</a></p>
+                style="color:var(--primary-color);">Link</a></p>
 
-        <p>GitHub - <a href="https://github.com/Gopal-13" target="_blank" style="color:rgb(47, 161, 206);">Link</a></p>
+        <p>GitHub - <a href="https://github.com/Gopal-13" target="_blank" style="color:var(--primary-color);">Link</a></p>
 
-        <p>Phone No. - <a href="https://contacts.google.com/new" target="_blank"
-                style="color:rgb(47, 161, 206);">7368082492</a></p>
+        <p>Phone No. - <a href="tel:7368082492"
+                style="color:var(--primary-color);">7368082492</a></p>
     </div>
 
     <div class="container">
@@ -233,13 +237,13 @@
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="3dd4debe-89ca-403d-b01b-1c258ee4b2f9">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required aria-label="Your Name">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required aria-label="Your Email">
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" required aria-label="Your Message"></textarea>
 
             <input type="submit" value="Send Message">
         </form>
@@ -249,10 +253,10 @@
     <div class="Connect"> Feel Free to Connect with me on Social Media.</div>
     <div class="Media">
 
-        <p>Twitter || X - <a href="https://x.com/Gopal_ku0" target="_blank" style="color:rgb(47, 161, 206);">Link</a>
+        <p>Twitter || X - <a href="https://x.com/Gopal_ku0" target="_blank" style="color:var(--primary-color);">Link</a>
         </p>
 
-        <p>Instagram - <a href="https://www.instagram.com/kumar_gopal13?igsh=YXkzd29mOG9vMzhk" target="_blank" style="color:rgb(47, 161, 206);">Link</a>
+        <p>Instagram - <a href="https://www.instagram.com/kumar_gopal13?igsh=YXkzd29mOG9vMzhk" target="_blank" style="color:var(--primary-color);">Link</a>
         </p>
 
     </div>
